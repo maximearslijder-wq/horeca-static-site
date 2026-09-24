@@ -1,0 +1,52 @@
+
+html,body{height:100%;}
+body{margin:0;background:#E7E5E0;display:flex;align-items:center;justify-content:center;padding:24px;min-height:100vh;font-family:'Manrope',system-ui,sans-serif;}
+.screen-wrap{position:relative;}
+.screen{border-radius:16px;box-shadow:0 20px 60px -20px rgba(20,20,20,.35),0 2px 8px rgba(20,20,20,.12);overflow:hidden;}
+
+
+
+*{box-sizing:border-box;}
+a{color:inherit;}
+.topbar{display:flex;align-items:center;gap:14px;padding:18px 40px;border-bottom:1px solid #DADFE6;background:#FFFFFF;flex:0 0 auto;}
+.brand{display:flex;align-items:center;gap:10px;}
+.brand-mark{width:32px;height:32px;object-fit:contain;flex:0 0 auto;}
+.brand-name{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#1B2430;}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;}
+.badge-proto{background:#EDEBE6;color:#8A6D3B;border:1px dashed #C9A876;}
+.badge-exists{background:#D9F0EC;color:#0F5C55;border:1px solid #9FD9CF;}
+.steps{display:flex;align-items:center;gap:10px;margin-left:14px;}
+.step-label{font-size:11.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#4B5565;}
+.dots{display:flex;gap:6px;}
+.dot{width:7px;height:7px;border-radius:999px;background:#DADFE6;}
+.dot.active{background:#C7541F;}
+.content{flex:1;padding:40px 48px;display:flex;flex-direction:column;gap:26px;overflow:auto;}
+h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:30px;margin:0;letter-spacing:-.01em;line-height:1.15;}
+.subtitle{font-size:14.5px;color:#4B5565;margin:0;max-width:560px;line-height:1.55;}
+.choice-grid{display:grid;gap:14px;}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr));}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr));}
+.choice-card{display:flex;flex-direction:column;gap:6px;padding:22px;border-radius:14px;background:#FFFFFF;border:1.5px solid #DADFE6;text-decoration:none;color:#1B2430;}
+.choice-card .label{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;}
+.choice-card .desc{font-size:12.5px;color:#4B5565;line-height:1.4;}
+.chip-grid{display:flex;flex-wrap:wrap;gap:10px;}
+.chip{padding:11px 18px;border-radius:999px;border:1.5px solid #DADFE6;background:#FFFFFF;color:#1B2430;font-family:'Manrope',system-ui,sans-serif;font-size:13.5px;font-weight:600;cursor:pointer;}
+.chip-selected{background:#C7541F;border-color:#C7541F;color:#FFFFFF;}
+.field{display:flex;flex-direction:column;gap:6px;max-width:360px;}
+.field label{font-size:12.5px;font-weight:700;color:#4B5565;text-transform:uppercase;letter-spacing:.04em;}
+.field input{padding:12px 14px;border-radius:9px;border:1.5px solid #DADFE6;background:#FFFFFF;font-size:14px;font-family:'Manrope',system-ui,sans-serif;color:#1B2430;width:100%;}
+.field input:focus{outline:2px solid #C7541F;outline-offset:1px;}
+.placeholder-box{border:1.5px dashed #C9A876;background:#FBF6EE;border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:6px;max-width:560px;}
+.placeholder-box .ph-label{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#8A6D3B;}
+.placeholder-box .ph-text{font-size:13.5px;color:#5C4A2A;line-height:1.5;}
+.price-card{background:#FFFFFF;border:1.5px solid #DADFE6;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px;max-width:320px;}
+.price-amount{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:36px;color:#1B2430;}
+.price-note{font-size:12px;color:#4B5565;line-height:1.5;}
+.footer{padding:22px 48px;border-top:1px solid #DADFE6;display:flex;align-items:center;background:#FFFFFF;flex:0 0 auto;}
+.footer-actions{display:flex;gap:12px;margin-left:auto;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:10px;font-weight:700;font-size:13.5px;text-decoration:none;cursor:pointer;border:none;font-family:'Manrope',system-ui,sans-serif;}
+.btn-primary{background:#C7541F;color:#FFFFFF;}
+.btn-secondary{background:#FFFFFF;color:#1B2430;border:1.5px solid #DADFE6;}
+.back-link{font-size:13px;color:#4B5565;text-decoration:none;font-weight:600;}
+.confirm-icon{width:52px;height:52px;border-radius:999px;background:#DCF3E7;display:flex;align-items:center;justify-content:center;color:#1E8A5F;}
+

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wizard features – Horeca Onboarding Flow</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="screen-wrap">
+<div class="screen">
+<div style="width: 900px; height: 600px; background: #F4F5F7; color: #1B2430; font-family: 'Manrope', system-ui, sans-serif; display: flex; flex-direction: column; overflow: hidden;">
+<div class="topbar">
+  <div class="brand"><img class="brand-mark" src="assets/logo.png" alt="Logo"><div class="brand-name">Horeca Suite</div></div>
+  <div class="steps"><span class="step-label">Stap 4 van 4</span><div class="dots"><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot active"></div></div></div>
+  <div style="flex:1"></div>
+  <span class="badge badge-proto">Prototype · meerkeuze</span>
+</div>
+<div class="content">
+  <h1>Welke functies wil je gebruiken?</h1>
+  <p class="subtitle">Selecteer alles wat van toepassing is — meerdere keuzes mogelijk.</p>
+  <div class="chip-grid" id="feature-chips"></div>
+  </div>
+<div class="footer">
+  <a class="back-link" href="wizard-software.html">← Terug</a>
+  <div class="footer-actions"><a class="btn btn-primary" href="voorstel.html">Bekijk mijn voorstel</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+(function(){
+  var defs = [
+    { id: 'pos', label: 'Kassa & bestellingen' },
+    { id: 'reserv', label: 'Reserveringen' },
+    { id: 'stock', label: 'Voorraadbeheer' },
+    { id: 'staff', label: 'Personeelsplanning' },
+    { id: 'reports', label: 'Rapportages & omzet' },
+    { id: 'invoice', label: 'Facturatie' },
+    { id: 'webshop', label: 'Online bestellen / webshop' }
+  ];
+  var wrap = document.getElementById('feature-chips');
+  defs.forEach(function(d){
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'chip';
+    btn.textContent = d.label;
+    btn.addEventListener('click', function(){ btn.classList.toggle('chip-selected'); });
+    wrap.appendChild(btn);
+  });
+})();
+</script>
+
+<script src="assets/responsive.js"></script>
+</body>
+</html>
